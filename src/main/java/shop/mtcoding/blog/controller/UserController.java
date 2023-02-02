@@ -12,17 +12,11 @@ import shop.mtcoding.blog.model.UserRepository;
 @Controller
 public class UserController {
 
-    @Autowired
-    UserRepository userRepository;
-
-    @Autowired
-    HttpSession session;
-
-    @GetMapping("/logout")
-    public String logout() {
-        session.invalidate();
-        return "redirect:/";
-    }
+    // @GetMapping("/logout")
+    // public String logout() {
+    // session.invalidate();
+    // return "redirect:/";
+    // }
 
     @GetMapping("/loginForm")
     public String loginForm() {
